@@ -1,0 +1,206 @@
+#body-extension {
+    .section-install {
+        position: relative;
+    }
+
+    .path {
+        position: absolute;
+        top: 415px;
+        left: 371px;
+        @include respond(wide-land) {
+            top: 415px;
+            left: 236px;
+        }
+
+        @include respond(tab-land) {
+            display: none;
+        }
+    }
+
+    .path--2 {
+        top: 657px;
+        left: 316px;
+        @include respond(p-1480) {
+            width: 896px;
+            height: 3297px;
+        }
+    }
+
+    .footprint {
+        position: absolute;
+        @include respond(tab-land) {
+            display: none;
+        }
+    }
+
+    .footprint--1 {
+        @include respond(wide-land) {
+            top: 522px !important;
+            left: 816px !important;
+        }
+    }
+    .footprint--2 {
+        @include respond(wide-land) {
+            top: 1205px !important;
+            left: 343px !important;
+            transform: rotate(97deg) !important;
+        }
+    }
+    .footprint--3 {
+        @include respond(wide-land) {
+            top: 1924px !important;
+            left: 785px !important;
+        }
+    }
+
+    .footprint--4 {
+        top: 735px !important;
+        left: 873px !important;
+        @include respond(wide-land) {
+            top: 692px !important;
+            left: 786px !important;
+        }
+        @include respond(p-1480) {
+            top: 692px !important;
+            left: 677px !important;
+        }
+    }
+    .footprint--5 {
+        top: 1381px !important;
+        left: 613px !important;
+        @include respond(wide-land) {
+            left: 615px !important;
+        }
+        @include respond(p-1480) {
+            left: 599px !important;
+            top: 1339px !important;
+        }
+    }
+    .footprint--6 {
+        top: 2123px !important;
+        left: 790px !important;
+        @include respond(wide-land) {
+            top: 2077px !important;
+            left: 702px !important;
+        }
+        @include respond(p-1480) {
+            top: 1979px !important;
+            left: 513px !important;
+        }
+    }
+    .footprint--7 {
+        top: 2609px !important;
+        @include respond(wide-land) {
+            left: 366px !important;
+        }
+    }
+    .footprint--8 {
+        top: 3352px !important;
+        left: 1342px !important;
+        @include respond(wide-land) {
+            left: 1343px !important;
+        }
+        @include respond(p-1480) {
+            left: 1114px !important;
+        }
+    }
+
+    .info {
+        font-size: 1.3rem;
+        color: $maingreen;
+        font-weight: 600;
+        position: absolute;
+        bottom: -110px;
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @include respond(tab-land) {
+            position: relative;
+            display: none;
+        }
+        p {
+            display: inline-block;
+            text-align: center;
+        }
+    }
+
+    .info-frame-3 {
+        @include respond(p-1480) {
+            bottom: -239px;
+            left: 25%;
+        }
+    }
+
+    .info-finish {
+        @include respond(p-1480) {
+            top: 780px !important;
+        }
+    }
+
+    .title {
+        font-size: 2.2rem;
+        color: $maingreen;
+        padding: 50px 0;
+        background-color: #f7f7f7;
+        font-weight: 600;
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 120px;
+        @include respond(p-750) {
+            padding: 40px 0;
+            font-size: 1.8rem;
+            margin-bottom: 0px;
+        }
+    }
+
+    .subtitle {
+        font-size: 1.3rem;
+        margin-bottom: 100px;
+        text-align: center;
+        width: 80%;
+        margin-left: 147px;
+        @include respond(wide-land) {
+            margin-left: 0px !important;
+            width: 100%;
+            font-size: 1.2rem;
+            margin-bottom: 50px;
+        }
+        @include respond(phone) {
+            margin-left: 0px !important;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    .steps {
+        @include respond(tab-land) {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    .info--responsive {
+        display: none;
+
+        @include respond(tab-land) {
+            width: 70%;
+            display: inline-block;
+            font-size: 1.3rem;
+            color: $maingreen;
+            font-weight: 600;
+            padding: 100px 0;
+        }
+
+        @include respond(tab-port) {
+            padding: 50px 0;
+        }
+
+        @include respond(p-750) {
+            width: 100%;
+            padding: 0;
+        }
+    }
+}

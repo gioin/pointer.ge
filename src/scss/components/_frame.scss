@@ -1,0 +1,173 @@
+#body-extension {
+    .frame {
+        display: inline-block;
+        position: relative;
+        // width: 932px;
+        // height: 610px;
+        width: 814px;
+        height: 597px;
+        background-repeat: no-repeat;
+        @include respond(wide-land) {
+            transform: scale(0.8);
+        }
+        @include respond(tab-land) {
+            float: none !important;
+            transform: scale(1);
+        }
+        @include respond(tab-port) {
+            float: none !important;
+            transform: scale(0.8);
+        }
+        @include respond(p-750) {
+            float: none !important;
+            transform: scale(0.65);
+        }
+        @include respond(phone) {
+            float: none !important;
+            transform: scale(0.45, 0.45);
+            margin-bottom: -100px;
+            margin-top: -84px;
+        }
+        &__screen {
+            position: absolute;
+            top: 107px;
+            left: 70px;
+
+            img {
+                width: 706px;
+            }
+        }
+
+        &__screen--right {
+            position: absolute;
+            top: 107px;
+            right: 70px;
+
+            img {
+                width: 706px;
+            }
+        }
+
+        &__circle {
+            position: absolute;
+            width: 91px;
+            height: 91px;
+            background: #44caa5 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 6px #00000029;
+            opacity: 1;
+            border-radius: 50%;
+            top: -45px;
+            right: -45px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 3rem;
+            @include respond(phone) {
+                width: 120px;
+                height: 120px;
+                top: -138px;
+                right: 443px;
+            }
+        }
+
+        .frame__circle--left {
+            left: -45px;
+            @include respond(phone) {
+                left: 443px;
+            }
+        }
+
+        .frame__circle--left-4 {
+            @include respond(phone) {
+                left: 100px;
+            }
+        }
+    }
+
+    .frame--1 {
+        background-image: url('../img/frame.svg');
+    }
+    .frame--2 {
+        background-image: url('../img/frame_flip.svg');
+    }
+    .frame--3 {
+        margin-top: 122px;
+        background-image: url('../img/frame.svg');
+        @include respond(p-1480) {
+            margin-top: 0px;
+        }
+        @include respond(phone) {
+            margin-top: -84px;
+        }
+    }
+
+    .frame--4 {
+        background-image: url('../img/frame2.svg');
+        background-position-x: right;
+        float: right;
+        padding-bottom: 210px;
+        margin-top: 70px;
+        height: 809px;
+
+        @include respond(tab-land) {
+            padding: 0 !important;
+            height: 597px !important;
+        }
+
+        @include respond(phone) {
+            margin-top: -84px;
+        }
+    }
+
+    .frame--5 {
+        background-image: url('../img/frame.svg');
+        margin-top: -70px;
+    }
+
+    .frame--6 {
+        @include respond(wide-land) {
+            margin-bottom: 150px !important;
+        }
+        @include respond(p-1480) {
+            margin-bottom: 253px !important;
+        }
+        @include respond(tab-land) {
+            margin-top: -84px;
+            margin-bottom: -160px !important;
+        }
+
+        .frame__screen--right {
+            @include respond(p-1480) {
+                margin-top: 138px;
+            }
+            @include respond(tab-land) {
+                margin-top: -84px;
+            }
+        }
+    }
+
+    .scalex {
+        transform: scaleX(-1);
+    }
+
+    .info--resp {
+        @include respond(wide-land) {
+            left: -35% !important;
+            bottom: 264px !important;
+        }
+
+        @include respond(tab-land) {
+            display: none;
+        }
+    }
+
+    .info--resp2 {
+        @include respond(wide-land) {
+            width: 59% !important;
+            top: 399px !important;
+            left: -37% !important;
+        }
+    }
+}

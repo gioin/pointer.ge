@@ -1,0 +1,38 @@
+#body-extension {
+  .container {
+    margin: auto;
+    max-width: 1660px;
+    padding: 0 20px;
+    width: 100%;
+    position: relative;
+  }
+
+  // .content {
+  //   width: 100%;
+  //   justify-content: center;
+  // }
+  
+  .container--column {
+    flex-direction: column;
+  }
+  
+  .container--center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .margin-b-0 {
+    margin-bottom: 0;
+  }
+  
+  .none {
+    display: none;
+  }
+  
+  .block {
+    display: block;
+  }
+  
+}
+

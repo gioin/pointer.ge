@@ -1,0 +1,53 @@
+#body-extension {
+    .header {
+        width: 100%;
+        .content {
+            padding: 55px 0;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            @include respond(tab-land) {
+                flex-direction: column;
+            }
+            .text {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                @include respond(tab-land) {
+                    display: inline-block;
+                    text-align: center;
+                    margin-top: 50px;
+                }
+                h1 {
+                    font-size: 1.6rem;
+                    margin: 0;
+                    @include respond(phone) {
+                        font-size: 1.5rem;
+                    }
+                }
+                p {
+                    margin-top: 14px;
+                    width: 51%;
+                    font-size: $default-font-size;
+                    @include respond(tab-land) {
+                        width: inherit;
+                    }
+                }
+            }
+
+            img {
+                width: 250px;
+            }
+        }
+        &__bottom {
+            background-color: #f7f7f7;
+            text-align: center;
+            font-size: 1.7rem;
+            color: $maingreen;
+            font-weight: 600;
+            padding: 50px 0;
+            font-style: italic;
+        }
+    }
+}

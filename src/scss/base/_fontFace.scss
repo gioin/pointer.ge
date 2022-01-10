@@ -1,0 +1,74 @@
+@import './abstracts/variable';
+
+/*@font-face {
+  font-family: '#{$font-name}';
+  src: url('#{$base-font}25UltLt.eot');
+  src: url('#{$base-font}25UltLt.woff2') format('woff2'),
+    url('#{$base-font}25UltLt.woff') format('woff'),
+    url('#{$base-font}25UltLt.ttf') format('truetype');
+  font-weight: 200;
+  font-display: swap;
+}*/
+/*
+@font-face {
+  font-family: '#{$font-name}';
+  src: url('#{$base-font}35Thin.eot');
+  src: url('#{$base-font}35Thin.woff2') format('woff2'),
+    url('#{$base-font}35Thin.woff') format('woff'),
+    url('#{$base-font}35Thin.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+}*/
+@font-face {
+  font-family: '#{$font-name}';
+  src: url('#{$base-font}45Light.eot');
+  src: url('#{$base-font}45Light.woff2') format('woff2'),
+    url('#{$base-font}45Light.woff') format('woff'),
+    url('#{$base-font}45Light.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: '#{$font-name}';
+  src: url('#{$base-font}55Roman.eot');
+  src: url('#{$base-font}55Roman.woff2') format('woff2'),
+    url('#{$base-font}55Roman.woff') format('woff'),
+    url('#{$base-font}55Roman.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: '#{$font-name}';
+  src: url('#{$base-font}65Medium.eot');
+  src: url('#{$base-font}65Medium.woff2') format('woff2'),
+    url('#{$base-font}65Medium.woff') format('woff'),
+    url('#{$base-font}65Medium.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+}
+/*@font-face {
+  font-family: '#{$font-name}';
+  src: url('#{$base-font}75Bold.eot');
+  src: url('#{$base-font}75Bold.woff2') format('woff2'),
+    url('#{$base-font}75Bold.woff') format('woff'),
+    url('#{$base-font}75Bold.ttf') format('truetype');
+  font-weight: 700;
+}*/
+/*@font-face {
+  font-family: '#{$font-name}';
+  src: url('#{$base-font}85Heavy.eot');
+  src: url('#{$base-font}85Heavy.woff2') format('woff2'),
+    url('#{$base-font}85Heavy.woff') format('woff'),
+    url('#{$base-font}85Heavy.ttf') format('truetype');
+  font-weight: 800;
+  font-display: swap;
+}*/
+/*
+@font-face {
+  font-family: '#{$font-name}';
+  src: url('#{$base-font}95Black.eot');
+  src: url('#{$base-font}95Black.woff2') format('woff2'),
+    url('#{$base-font}95Black.woff') format('woff'),
+    url('#{$base-font}95Black.ttf') format('truetype');
+  font-weight: 900;
+} */
