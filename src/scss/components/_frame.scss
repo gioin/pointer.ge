@@ -10,7 +10,7 @@
         @include respond(wide-land) {
             transform: scale(0.8);
         }
-        @include respond(tab-land) {
+        @include respond(p-1480) {
             float: none !important;
             transform: scale(1);
         }
@@ -109,9 +109,10 @@
         float: right;
         padding-bottom: 210px;
         margin-top: 70px;
-        height: 809px;
+        height: 822px;
 
-        @include respond(tab-land) {
+        @include respond(p-1480) {
+            margin-top: 0px;
             padding: 0 !important;
             height: 597px !important;
         }
@@ -124,6 +125,12 @@
     .frame--5 {
         background-image: url('../img/frame.svg');
         margin-top: -70px;
+        @include respond(p-1480) {
+            margin-top: 0px;
+        }
+        @include respond(phone) {
+            margin-top: -60px;
+        }
     }
 
     .frame--6 {
@@ -131,18 +138,26 @@
             margin-bottom: 150px !important;
         }
         @include respond(p-1480) {
+            margin-top: -18px !important;
             margin-bottom: 253px !important;
         }
-        @include respond(tab-land) {
+        @include respond(p-1480) {
             margin-top: -84px;
             margin-bottom: -160px !important;
+        }
+        @include respond(tab-port){
+            margin-bottom: -148px !important;
+        }
+        @include respond(phone) {
+            margin-top: -84px !important;
+            height: 569px !important;
         }
 
         .frame__screen--right {
             @include respond(p-1480) {
                 margin-top: 138px;
             }
-            @include respond(tab-land) {
+            @include respond(p-1480) {
                 margin-top: -84px;
             }
         }
@@ -152,22 +167,22 @@
         transform: scaleX(-1);
     }
 
-    .info--resp {
-        @include respond(wide-land) {
-            left: -35% !important;
-            bottom: 264px !important;
-        }
+    // .info--resp {
+    //     @include respond(wide-land) {
+    //         left: -35% !important;
+    //         bottom: 264px !important;
+    //     }
 
-        @include respond(tab-land) {
-            display: none;
-        }
-    }
+    //     @include respond(tab-land) {
+    //         display: none;
+    //     }
+    // }
 
-    .info--resp2 {
-        @include respond(wide-land) {
-            width: 59% !important;
-            top: 399px !important;
-            left: -37% !important;
-        }
-    }
+    // .info--resp2 {
+    //     @include respond(wide-land) {
+    //         width: 59% !important;
+    //         top: 399px !important;
+    //         left: -37% !important;
+    //     }
+    // }
 }

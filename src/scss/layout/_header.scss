@@ -38,6 +38,9 @@
 
             img {
                 width: 250px;
+                @include respond(phone) {
+                    width: 230px;
+                }
             }
         }
         &__bottom {

@@ -3,6 +3,18 @@
         position: relative;
     }
 
+    .section-usage {
+        @include respond(wide-land){
+            padding-top: 20px !important
+        }
+        @include respond(p-1480){
+            padding-top: 0px!important;
+        }
+        @include respond(tab-port){
+            margin-top: 20px;
+        }
+    }
+
     .path {
         position: absolute;
         top: 415px;
@@ -12,7 +24,7 @@
             left: 236px;
         }
 
-        @include respond(tab-land) {
+        @include respond(p-1480) {
             display: none;
         }
     }
@@ -28,7 +40,7 @@
 
     .footprint {
         position: absolute;
-        @include respond(tab-land) {
+        @include respond(p-1480) {
             display: none;
         }
     }
@@ -41,8 +53,8 @@
     }
     .footprint--2 {
         @include respond(wide-land) {
-            top: 1205px !important;
-            left: 343px !important;
+            top: 1145px!important;
+            left: 502px!important;
             transform: rotate(97deg) !important;
         }
     }
@@ -57,8 +69,9 @@
         top: 735px !important;
         left: 873px !important;
         @include respond(wide-land) {
-            top: 692px !important;
-            left: 786px !important;
+            top: 687px!important;
+            left: 776px!important;
+            transform: rotate(-19deg);
         }
         @include respond(p-1480) {
             top: 692px !important;
@@ -66,10 +79,10 @@
         }
     }
     .footprint--5 {
-        top: 1381px !important;
+        top: 1348px !important;
         left: 613px !important;
         @include respond(wide-land) {
-            left: 615px !important;
+            left: 674px !important;
         }
         @include respond(p-1480) {
             left: 599px !important;
@@ -114,7 +127,7 @@
         text-align: center;
         left: 50%;
         transform: translate(-50%, -50%);
-        @include respond(tab-land) {
+        @include respond(p-1480) {
             position: relative;
             display: none;
         }
@@ -146,10 +159,19 @@
         font-style: italic;
         text-align: center;
         margin-bottom: 120px;
+        @include respond(wide-land){
+            margin-bottom: 70px !important
+        }
+        @include respond(p-1480){
+            margin-bottom: 100px!important
+        }
+        @include respond(tab-port){
+            margin-bottom: 70px!important
+        }
         @include respond(p-750) {
-            padding: 40px 0;
+            padding: 40px 20px;
             font-size: 1.8rem;
-            margin-bottom: 0px;
+            margin-bottom: -20px!important
         }
     }
 
@@ -165,27 +187,45 @@
             font-size: 1.2rem;
             margin-bottom: 50px;
         }
+        @include respond(p-1480){
+            margin-bottom: 100px!important
+        }
+        @include respond(tab-port){
+            margin-bottom: 70px!important
+        }
+        @include respond(p-750) {
+            margin-top: 70px!important;
+            margin-bottom: 0px!important
+        }
         @include respond(phone) {
             margin-left: 0px !important;
             width: 100%;
-            margin-bottom: 20px;
         }
     }
 
     .steps {
-        @include respond(tab-land) {
+        @include respond(p-1480) {
             display: flex;
             justify-content: center;
             flex-direction: column;
             align-items: center;
             text-align: center;
         }
+        @include respond(p-750) {
+            margin-bottom: 70px!important
+        }
+    }
+
+    .steps--bottom {
+        @include respond(phone) {
+            margin-bottom: 30px!important
+        }  
     }
 
     .info--responsive {
         display: none;
 
-        @include respond(tab-land) {
+        @include respond(p-1480) {
             width: 70%;
             display: inline-block;
             font-size: 1.3rem;
